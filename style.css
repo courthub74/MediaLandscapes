@@ -1,42 +1,177 @@
-@media only screen and (min-device-width: 200px) and (max-device-width: 666px) {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap");
+/* Portrait */
+@media only screen and (orientation: portrait) {
   * {
     margin: 0;
   }
   * body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    font-size: large;
-    height: 100vh;
-  }
-}
-@media only screen and (min-device-width: 667px) and (max-device-width: 1500px) {
-  * {
-    margin: 0;
-  }
-  * body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: darkblue;
-    color: white;
-    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .section_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
     height: 100vh;
+    background-color: darkgreen;
+  }
+  * body .section_one h1 {
+    color: white;
+    font-size: 1.5rem;
+    border: 6px double white;
+    padding: 1vh;
+    font-family: "Roboto", sans-serif;
+  }
+  * body .section_one p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+  }
+  * body .section_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2vh;
+    background-color: darkblue;
+  }
+  * body .section_two h1 {
+    color: white;
+    font-size: 1.5rem;
+    border: 6px double white;
+    padding: 1vh;
+    font-family: "Roboto", sans-serif;
+  }
+  * body .section_two p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+    font-family: "Inter", sans-serif;
   }
 }
-@media only screen and (min-device-width: 1600px) {
+/* Landscape */
+@media only screen and (orientation: landscape) {
   * {
     margin: 0;
   }
   * body {
+    background-color: darkblue;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hotpink;
-    color: white;
-    font-size: large;
+  }
+  * body .section_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
     height: 100vh;
+    background-color: darkgreen;
+  }
+  * body .section_one h1 {
+    color: white;
+    font-size: 2rem;
+    border: 6px double white;
+    padding: 1vh;
+    font-family: "Roboto", sans-serif;
+  }
+  * body .section_one p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+  }
+  * body .section_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2vh;
+    background-color: darkblue;
+  }
+  * body .section_two h1 {
+    color: white;
+    font-size: 2rem;
+    border: 6px double white;
+    padding: 1vh;
+    font-family: "Roboto", sans-serif;
+  }
+  * body .section_two p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  * {
+    margin: 0;
+  }
+  * body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .section_one {
+    background-color: darkmagenta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    height: 100vh;
+  }
+  * body .section_one h1 {
+    color: white;
+    font-size: 3rem;
+    border: 6px double white;
+    padding: 1vh;
+    font-family: "Roboto", sans-serif;
+  }
+  * body .section_one p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+  }
+  * body .section_two {
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    height: 100vh;
+  }
+  * body .section_two h1 {
+    color: white;
+    font-size: 3rem;
+    border: 6px double white;
+    padding: 1vh;
+    font-family: "Roboto", sans-serif;
+  }
+  * body .section_two p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 80%;
+    font-family: "Inter", sans-serif;
   }
 }/*# sourceMappingURL=style.css.map */
