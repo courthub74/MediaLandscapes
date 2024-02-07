@@ -4,9 +4,10 @@
 // SECTIONS IN VIEWPORT
 
 // FOLLOW DOCUMENTATION
-// MOBILE DEVICES
+
+// MOBILE PHONES
 /* Portrait */
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 500px) {
     * {
         margin: 0;
         body { 
@@ -25,14 +26,14 @@
                 background-color: darkgreen;
                 h1 {
                     color: white;
-                    font-size: clamp(1rem, 2rem, 1.5rem);
+                    font-size: clamp(1rem, 2rem, 2.5rem);
                     border: 6px double white;
                     padding: 1vh;
                     font-family: 'Roboto', sans-serif;
                 }
                 p {
                     color: white;
-                    font-size: clamp(1rem, 2rem, 1rem);
+                    font-size: clamp(.5rem, 1rem, 1.5rem);
                     text-align: center;
                     width: 80%;
                     font-family: 'Inter', sans-serif;
@@ -48,14 +49,14 @@
                 background-color: darkblue;
                 h1 {
                     color: white;
-                    font-size: clamp(1rem, 2rem, 1.5rem);
+                    font-size: clamp(1rem, 2rem, 2.5rem);
                     border: 6px double white;
                     padding: 1vh;
                     font-family: 'Roboto', sans-serif;
                 }
                 p {
                     color: white;
-                    font-size: clamp(1rem, 2rem, 1rem);
+                    font-size: clamp(.5rem, 1rem, 1.5rem);
                     text-align: center;
                     width: 80%;
                     font-family: 'Inter', sans-serif;
@@ -65,11 +66,12 @@
     }
 }
 /* Landscape */
-@media only screen  and (orientation: landscape) {
+@media only screen and (min-width: 501px) {
     * {
         margin: 0;
         body { 
             background-color: darkblue;
+            // background-color: aqua;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -82,16 +84,17 @@
                 gap: 2vh;
                 height: 100vh;
                 background-color: darkgreen;
+                background-color: darkmagenta;
                 h1 {
                     color: white;
-                    font-size: clamp(1rem, 2rem, 3rem);
+                    font-size: clamp(1.5rem, 2rem, 2.5rem);
                     border: 6px double white;
                     padding: 1vh;
                     font-family: 'Roboto', sans-serif;
                 }
                 p {
                     color: white;
-                    font-size: clamp(1rem, 2rem, 1rem);
+                    font-size: clamp(1rem, 1.5rem, 2rem);
                     text-align: center;
                     width: 80%;
                     font-family: 'Inter', sans-serif;
@@ -105,16 +108,17 @@
                 height: 100vh;
                 gap: 2vh;
                 background-color: darkblue;
+                background-color: tomato;
                 h1 {
                     color: white;
-                    font-size: clamp(1rem, 2rem, 3rem);
+                    font-size: clamp(1.5rem, 2rem, 2.5rem);
                     border: 6px double white;
                     padding: 1vh;
                     font-family: 'Roboto', sans-serif;
                 }
                 p {
                     color: white;
-                    font-size: clamp(1rem, 2rem, 1rem);
+                    font-size: clamp(1rem, 1.5rem, 2rem);
                     text-align: center;
                     width: 80%;
                     font-family: 'Inter', sans-serif;
@@ -123,6 +127,75 @@
         }
     }
 }
+// BIGGER TABLET
+@media only screen and (min-width: 800px) {
+    * {
+        body {
+            background-color: darkblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .section_one {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2vh;
+                height: 100vh;
+                background-color: darkgreen;
+                background-color: darkslategray;
+                h1 {
+                    color: white;
+                    font-size: clamp(2rem, 3.5rem, 4rem);
+                    border: 6px double white;
+                    padding: 1vh;
+                    font-family: 'Roboto', sans-serif;
+                }
+                p {
+                    color: white;
+                    font-size: clamp(2rem, 2.5rem, 4rem);
+                    text-align: center;
+                    width: 80%;
+                    font-family: 'Inter', sans-serif;
+                }
+            }
+            .section_two {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap: 2vh;
+                background-color: darkblue;
+                background-color: peru;
+                h1 {
+                    color: white;
+                    font-size: clamp(2rem, 2.5rem, 3rem);
+                    border: 6px double white;
+                    padding: 1vh;
+                    font-family: 'Roboto', sans-serif;
+                }
+                p {
+                    color: white;
+                    font-size: clamp(1.5rem, 2rem, 3rem);
+                    text-align: center;
+                    width: 80%;
+                    font-family: 'Inter', sans-serif;
+                }
+            } 
+        }
+    }
+}
+// TABLETS
+// @media only screen and (min-width: 768px) {
+//     * {
+//         margin: 0;
+//         body {
+//             display: none;
+//         }
+//     }
+// }
 // DESKTOP
 @media only screen and (min-width: 1500px) {
     * {

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap");
 /* Portrait */
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 500px) {
   * {
     margin: 0;
   }
@@ -22,7 +22,7 @@
   }
   * body .section_one h1 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: 6px double white;
     padding: 1vh;
     font-family: "Roboto", sans-serif;
@@ -45,7 +45,7 @@
   }
   * body .section_two h1 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: 6px double white;
     padding: 1vh;
     font-family: "Roboto", sans-serif;
@@ -59,7 +59,7 @@
   }
 }
 /* Landscape */
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width: 501px) {
   * {
     margin: 0;
   }
@@ -78,6 +78,7 @@
     gap: 2vh;
     height: 100vh;
     background-color: darkgreen;
+    background-color: darkmagenta;
   }
   * body .section_one h1 {
     color: white;
@@ -88,7 +89,7 @@
   }
   * body .section_one p {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     width: 80%;
     font-family: "Inter", sans-serif;
@@ -101,6 +102,7 @@
     height: 100vh;
     gap: 2vh;
     background-color: darkblue;
+    background-color: tomato;
   }
   * body .section_two h1 {
     color: white;
@@ -111,7 +113,64 @@
   }
   * body .section_two p {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+  }
+}
+@media only screen and (min-width: 800px) {
+  * body {
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .section_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    height: 100vh;
+    background-color: darkgreen;
+    background-color: darkslategray;
+  }
+  * body .section_one h1 {
+    color: white;
+    font-size: 3.5rem;
+    border: 6px double white;
+    padding: 1vh;
+    font-family: "Roboto", sans-serif;
+  }
+  * body .section_one p {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+  }
+  * body .section_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2vh;
+    background-color: darkblue;
+    background-color: peru;
+  }
+  * body .section_two h1 {
+    color: white;
+    font-size: 2.5rem;
+    border: 6px double white;
+    padding: 1vh;
+    font-family: "Roboto", sans-serif;
+  }
+  * body .section_two p {
+    color: white;
+    font-size: 2rem;
     text-align: center;
     width: 80%;
     font-family: "Inter", sans-serif;
